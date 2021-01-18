@@ -68,12 +68,13 @@ function connectSockets(io) {
             io.to(socket.myRoom).emit('user-joined', user)
         });
 
-        // socket.on('is typing', isTyping => {
-        //     io.to(socket.myRoom).emit('type msg', isTyping);
-        // })
-        // socket.on('is not typing', isTyping => {
-        //     io.to(socket.myRoom).emit('stop type msg', isTyping);
-        // })
+        socket.on('system-message', msg => {
+            io.to(socket.myRoom).emit('sys-msg', msg);
+        })
+
+        socket.on('bots-control', arg => {
+            io.to(socket.myRoom).emit('set-bots', arg);
+        })
     });
 };
 

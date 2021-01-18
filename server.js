@@ -22,20 +22,7 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions));
 }
 var msgHistory = [
-    { name: 'Code_Girl^_^', msg: 'ARGGGGH!!!! ', color: '#E000FF', roomId: 'general' },
-    { name: 'alpha_centauri', msg: 'anyone heard about the signal coming from Proxima Centauri?!?! thats insane!', color: '#FF9B00', roomId: 'general' },
-    { name: 'ManMadeMan81', msg: '^ yeah alpha its probably E.T calling for you :))', color: '#7BA200', roomId: 'general' },
-    { name: 'johnWiCK', msg: 'HAHAHAHAHAHAHAHA', color: '#00BD8D', roomId: 'general' },
-    { name: 'hax0r', msg: 'lmao XDD', color: '#FE8818', roomId: 'general' },
-    { name: 'hax0r', msg: 'lol haha :D', color: '#FE8818', roomId: 'general' },
-    { name: 'hax0r', msg: 'nice one', color: '#FE8818', roomId: 'general' },
-    { name: 'Code_Girl^_^', msg: 'LOL', color: '#E000FF', roomId: 'general' },
-    { name: 'alpha_centauri', msg: 'yeah, i\'ll go to Alien Tech chat, maybe theyll understand me... you guys keep trying hack candy crush, rofl xD', color: '#FF9B00', roomId: 'general' },
-    { name: 'alpha_centauri', msg: 'NO WAY MANN!!?', color: '#FF9B00', roomId: 'general' },
-    { name: 'ANDREY_DOLYA_🦊', msg: 'Yo guys, I\'im looking for a Frontend \ Fullstack position, if you know someone recommend me please :)  my Email: dolya7kk@gmail.com , thanks guys :)!', color: '#5D00FF' },
-    { name: 'ANDREY_DOLYA_🦊', msg: 'I\'m working on voice massages feature, soon it will be ready guys', color: '#5D00FF' },
-    { name: 'Captaion_Philippa_Georgiou', msg: 'Bitcoin is skyrocketing today! $40,000!! omg..', color: '#81FF00' },
-    { name: 'Matthew', msg: 'Guys does some1 tried Matter.js?', color: '#004068' }
+    
 ];
 
 connectSockets(io)
